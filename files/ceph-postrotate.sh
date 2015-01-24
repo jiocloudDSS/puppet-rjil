@@ -25,3 +25,5 @@ fi
 if [ -e "/etc/init.d/radosgw" ]; then
     /etc/init.d/radosgw restart  >/dev/null
 fi
+
+python /usr/local/bin/dump_logs.py
