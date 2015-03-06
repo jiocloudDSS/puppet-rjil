@@ -42,6 +42,8 @@ rjil::ceph::osd::osds:
     - sdv
     - sdw
     - sdx
+    - sdy
+    - sdz
 
 rjil::system::accounts::active_users: [rahul,harshalgupta,bafna,abhidixit,shivanshu21]
 rjil::system::accounts::sudo_users:
@@ -60,3 +62,6 @@ rjil::ceph::osd::autodetect: false
 rjil::ceph::osd::osd_journal_size: 10
 rjil::ceph::mon::pool_pg_num: 32
 
+rjil::ceph::pool_default_size: 6
+ceph::conf::pool_default_size:  "%{hiera('rjil::ceph::pool_default_size)}"
+ceph::conf::pool_default_min_size: "%{hiera('rjil::ceph::pool_default_size)}"
