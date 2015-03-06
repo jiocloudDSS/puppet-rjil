@@ -42,8 +42,6 @@ rjil::ceph::osd::osds:
     - sdv
     - sdw
     - sdx
-    - sdy
-    - sdz
 
 rjil::system::accounts::active_users: [rahul,harshalgupta,bafna,abhidixit,shivanshu21]
 rjil::system::accounts::sudo_users:
