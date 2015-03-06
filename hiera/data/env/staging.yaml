@@ -61,5 +61,5 @@ rjil::ceph::osd::osd_journal_size: 10
 rjil::ceph::mon::pool_pg_num: 32
 
 rjil::ceph::pool_default_size: 6
-ceph::conf::pool_default_size:  "%{hiera('rjil::ceph::pool_default_size)}"
-ceph::conf::pool_default_min_size: "%{hiera('rjil::ceph::pool_default_size)}"
+ceph::conf::pool_default_size:  "%{hiera('rjil::ceph::pool_default_size')}"
+ceph::conf::pool_default_min_size: "%{hiera('rjil::ceph::pool_default_size')}"
